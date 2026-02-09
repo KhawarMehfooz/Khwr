@@ -76,6 +76,61 @@
         <move element="header.profile.link" destination="nav-section-ctas" after="top.search" />
         <move element="minicart" destination="nav-section-ctas" after="header.profile.link" />
 
+
+        <referenceBlock name="footer_links" remove="true" />
+        <referenceContainer name="footer.container" remove="true" />
+
+
+        <referenceContainer name="footer">
+            <container
+                name="footer.main"
+                htmlTag="div"
+                htmlClass="main_container"
+                before="-"
+            />
+
+            <container
+                name="footer.app"
+                htmlTag="div"
+                htmlClass="footer_bottom_block"
+                after="footer.main"
+            />
+        </referenceContainer>
+
+        <referenceContainer name="footer.main">
+            <container
+                name="footer.email"
+                htmlTag="div"
+                htmlClass="email_row"
+                before="-"
+            />
+
+            <container 
+                name="footer.columns"
+                htmlTag="div"    
+                htmlClass="footer_row"
+            />
+
+            <container
+                name="footer.social"
+                htmlTag="div"
+                htmlClass="footer_social"
+            />
+        </referenceContainer>
+
+        <referenceContainer name="footer.email">
+            <block class="Magento\Cms\Block\Block" name="footer.newsletter.title">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        footer-newsletter-title
+                    </argument>
+                </arguments>
+            </block>
+
+        </referenceContainer>
+
+        <move element="form.subscribe" destination="footer.email" after="footer.newsletter.title" />
+
     </body>
 </page>
     
