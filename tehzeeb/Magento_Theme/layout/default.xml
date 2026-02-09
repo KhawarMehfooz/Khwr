@@ -105,9 +105,9 @@
                 before="-"
             />
 
-            <container 
+            <container
                 name="footer.columns"
-                htmlTag="div"    
+                htmlTag="div"
                 htmlClass="footer_row"
             />
 
@@ -130,6 +130,56 @@
         </referenceContainer>
 
         <move element="form.subscribe" destination="footer.email" after="footer.newsletter.title" />
+
+        <referenceContainer name="footer.columns">
+            <block
+                class="Magento\Theme\Block\Html\Topmenu"
+                name="footer.categories"
+                template="Magento_Theme::html/footer/footer-categories.phtml"
+            />
+
+            <block class="Magento\Cms\Block\Block" name="footer.company">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer-company</argument>
+                </arguments>
+            </block>
+
+            <block class="Magento\Cms\Block\Block" name="footer.services">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer-services</argument>
+                </arguments>
+            </block>
+
+            <block class="Magento\Cms\Block\Block" name="footer.quick">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer-quick</argument>
+                </arguments>
+            </block>
+
+        </referenceContainer>
+
+        <referenceContainer name="footer.social">
+            <block class="Magento\Cms\Block\Block" name="footer.social.cms">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        footer-social
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <move element="copyright" destination="footer.social" after="footer.social.cms" />
+
+        <referenceContainer name="footer.app">
+            <block class="Magento\Cms\Block\Block" name="footer.app.cms">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        footer-app
+                    </argument>
+                </arguments>
+
+            </block>
+        </referenceContainer>
 
     </body>
 </page>
