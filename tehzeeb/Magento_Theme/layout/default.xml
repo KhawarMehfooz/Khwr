@@ -30,8 +30,6 @@
             />
 
 
-            <referenceBlock name="top.search" remove="true" />
-            <referenceBlock name="minicart" remove="true" />
             <referenceBlock name="catalog.compare.link" remove="true" />
 
         </referenceContainer>
@@ -53,13 +51,17 @@
         <move element="store.menu" destination="nav-section-left" after="header.left.cms" />
 
         <referenceContainer name="nav-section-right">
-            <block class="Magento\Cms\Block\Block" name="header.right.top">
-                <arguments>
-                    <argument name="block_id" xsi:type="string">
-                        header-right-top
-                    </argument>
-                </arguments>
-            </block>
+            <container
+                name="nav-section-ctas"
+                htmlClass="nav-section-ctas"
+                htmlTag="div"
+                before="header-right-nav"
+            />
+            <block
+                class="Magento\Customer\Block\Account\AuthorizationLink"
+                name="header.profile.link"
+                template="Magento_Customer::account/link/authorization.phtml"
+            />
 
             <block class="Magento\Cms\Block\Block" name="header.right.nav">
                 <arguments>
@@ -69,6 +71,11 @@
                 </arguments>
             </block>
         </referenceContainer>
+
+        <move element="top.search" destination="nav-section-ctas" />
+        <move element="header.profile.link" destination="nav-section-ctas" after="top.search" />
+        <move element="minicart" destination="nav-section-ctas" after="header.profile.link" />
+
     </body>
 </page>
     
