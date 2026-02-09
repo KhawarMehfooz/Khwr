@@ -1,0 +1,46 @@
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    // Top Bar (Delivery Text)
+    .panel.header {
+        .delivery_txt {
+            padding: 12px;
+            text-align: center;
+            transition: all 600ms ease;
+
+            p {
+                color: #4D4D4D;
+                font-size: 15px;
+                line-height: 23px;
+                font-weight: 500;
+            }
+
+            a {
+                color: #C5203C;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+
+        // Top Bar (Delivery Text)
+        .panel.header {
+            .delivery_txt {
+                padding: 8px;
+                padding-bottom: 0px;
+
+                p {
+                    font-size: 14px;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}

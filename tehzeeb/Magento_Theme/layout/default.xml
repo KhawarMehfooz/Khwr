@@ -4,6 +4,14 @@
     <body>
         <referenceContainer name="header.panel">
             <referenceBlock name="header.links" remove="true" />
+
+            <block class="Magento\Cms\Block\Block" name="header.top.cms">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        header-top
+                    </argument>
+                </arguments>
+            </block>
         </referenceContainer>
     </body>
 </page>
