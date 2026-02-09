@@ -13,6 +13,62 @@
                 </arguments>
             </block>
         </referenceContainer>
+
+        <referenceContainer name="header-wrapper">
+            <container
+                name="nav-section-left"
+                htmlTag="div"
+                htmlClass="nav-section-left"
+                before="logo"
+            />
+
+            <container
+                name="nav-section-right"
+                htmlTag="div"
+                htmlClass="nav-section-right"
+                after="logo"
+            />
+
+
+            <referenceBlock name="top.search" remove="true" />
+            <referenceBlock name="minicart" remove="true" />
+            <referenceBlock name="catalog.compare.link" remove="true" />
+
+        </referenceContainer>
+
+        <referenceContainer name="page.top">
+            <referenceBlock name="navigation.sections" remove="true" />
+        </referenceContainer>
+
+        <referenceContainer name="nav-section-left">
+            <block class="Magento\Cms\Block\Block" name="header.left.cms">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        header-left
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <move element="store.menu" destination="nav-section-left" after="header.left.cms" />
+
+        <referenceContainer name="nav-section-right">
+            <block class="Magento\Cms\Block\Block" name="header.right.top">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        header-right-top
+                    </argument>
+                </arguments>
+            </block>
+
+            <block class="Magento\Cms\Block\Block" name="header.right.nav">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">
+                        header-right-nav
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
     </body>
 </page>
     
