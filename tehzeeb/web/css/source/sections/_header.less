@@ -57,11 +57,13 @@ header {
                 display: none;
             }
 
-            .nav_bar,ul {
+            .nav_bar,
+            ul {
                 display: flex;
                 gap: 45px;
 
-                li a {
+                li a,
+                li a span {
                     font-size: 20px;
                     line-height: 28px;
                     color: #000000;
@@ -111,12 +113,16 @@ header {
                 align-items: center;
                 gap: 25px;
                 justify-content: end;
-                .minicart-wrapper{
+
+                .minicart-wrapper {
                     margin-left: 0px !important;
+                    margin-top: 0px !important;
                 }
 
-                .block.block-search{
-                    margin-right: 25px;
+                .field.search {
+                    border: 1px solid #000000;
+                    border-radius: 40px;
+                    padding: 0px 10px;
                 }
 
                 .call_cta a {
@@ -129,14 +135,12 @@ header {
                 }
 
                 .search_field {
-                    border: 1px solid #000000;
-                    border-radius: 40px;
-                    padding: 5px 10px;
+
                     display: flex;
                     align-items: center;
                     gap: 30px;
-                    // max-width: 260px;
                     width: 100%;
+                    max-width: 100%;
                     justify-content: space-between;
 
                     input {
@@ -159,9 +163,14 @@ header {
                         }
                     }
 
-                    button{
+                    button {
+                        padding: 0px !important;
                         border: none;
                         background: transparent;
+                        
+                        img{
+                            margin-top: 3px;
+                        }
                     }
                 }
             }
@@ -184,7 +193,9 @@ header {
             padding: 20px;
 
             .navigation {
-                .nav_bar {
+
+                .nav_bar,
+                ul {
                     gap: 25px;
 
                 }
@@ -197,7 +208,9 @@ header {
     header {
         .header.content {
             .navigation {
-                .nav_bar {
+
+                .nav_bar,
+                ul {
                     gap: 13px;
 
                 }
@@ -224,8 +237,12 @@ header {
             }
 
             .navigation {
-                .nav_bar {
-                    li a {
+
+                .nav_bar,
+                ul {
+
+                    li a,
+                    li a span {
                         font-size: 16px;
                         line-height: 24px;
                     }
@@ -287,10 +304,18 @@ header {
                         display: none;
                     }
 
+                    .field.search{
+                        border: 0px solid #000000;
+                        border-radius: 0px;
+                        padding: 0px;
+                        width: 26px;
+                        margin-left: auto;
+
+                    }
+
                     .search_field {
 
                         width: 26px;
-                        border: 0px solid #000000;
                         border-radius: 0px;
                         padding: 0px 0px;
 
@@ -318,7 +343,7 @@ header {
 
             .nav-section-right .nav-section-ctas .search_field {
                 gap: 20px;
-                max-width: 200px;
+                // max-width: 200px;
                 width: 100%;
             }
         }
