@@ -8,18 +8,21 @@
         margin: 0px !important;
     }
 
-    .block-search{
+    .block-search {
         padding: 0px !important;
         margin: 0px !important;
-        .control{
+
+        .control {
             border: none !important;
             padding: 0px !important;
             margin: 0px !important;
         }
-        .label{
+
+        .label {
             display: none !important;
         }
-        input{
+
+        input {
             padding: 0px !important;
         }
     }
@@ -40,4 +43,20 @@
         padding-top: 0px !important;
         padding-inline: 0px !important;
     }
+
+    .bdcrum {
+        .bdcrum_item {
+            &::after {
+                content: url('@{baseDir}images/right_arrow.png');
+                display: block;
+                margin: 0 15px;
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+        }
+    }
+
+
 }

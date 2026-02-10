@@ -2,7 +2,7 @@
     background-color: #f9f9f9;
 }
 
-.product_category .main_container {
+.main_container {
     max-width: 1600px;
     margin: auto;
     padding: 0 30px;
@@ -34,4 +34,36 @@
     font-size: 15px;
     display: block;
     cursor: pointer;
+}
+
+.bdcrum {
+    background-color: #F7F1E5;
+    padding-block: 3px;
+}
+
+.bdcrum .bdcrum_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    flex-wrap: nowrap;
+    justify-content: unset;
+}
+
+.bdcrum .bdcrum_list .bdcrum_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.bdcrum .bdcrum_list .bdcrum_link {
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #AC8342;
+    padding: 0px 0px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
 }
