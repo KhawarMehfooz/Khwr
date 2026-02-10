@@ -1,0 +1,31 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+
+/** @var \Magento\Catalog\Model\ResourceModel\Category\Collection $collection */
+$collection = $objectManager
+    ->get(\Magento\Catalog\Model\ResourceModel\Category\CollectionFactory::class)
+    ->create();
+
+$collection->addAttributeToSelect(['name', 'url_key'])
+    ->addAttributeToFilter('is_active', 1)
+    ->addAttributeToFilter('level', 2) 
+    ->addOrderField('position');
+?>
+
+<div class="product_category bg_category">
+    <div class="main_container">
+        <ul class="list_block">
+            <?php foreach ($collection as $category): ?>
+                <li class="list_item">
+                    <a href="<?= $block->escapeUrl($category->getUrl()) ?>"
+                       class="nav_item nav_link primary_text"
+                       title="<?= $block->escapeHtmlAttr($category->getName()) ?>">
+                        <?= $block->escapeHtml($category->getName()) ?>
+                    </a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+</div>

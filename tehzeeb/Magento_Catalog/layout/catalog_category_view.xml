@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+      <head>
+        <css src="css/pages/category.css"  />
+      </head>
+
+    <body>
+        <referenceContainer name="page.top">
+            <block 
+                   name="product_categories"
+                   before="breadcrumbs"
+                   template="Magento_Catalog::category/product_categories.phtml"/>
+        </referenceContainer>
+
+    </body>
+</page>
