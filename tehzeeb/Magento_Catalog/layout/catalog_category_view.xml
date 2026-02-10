@@ -13,5 +13,8 @@
                    template="Magento_Catalog::html/product_categories.phtml"/>
         </referenceContainer>
 
+        <referenceBlock name="div.sidebar.main" remove="true" />
+        <referenceBlock name="div.sidebar.additional" remove="true" />
+
     </body>
 </page>
