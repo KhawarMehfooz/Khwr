@@ -10,7 +10,7 @@
             <block 
                    name="product_categories"
                    before="breadcrumbs"
-                   template="Magento_Catalog::category/product_categories.phtml"/>
+                   template="Magento_Catalog::html/product_categories.phtml"/>
         </referenceContainer>
 
     </body>
