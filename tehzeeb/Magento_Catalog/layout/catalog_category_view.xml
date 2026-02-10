@@ -14,6 +14,7 @@
         </referenceContainer>
 
         <referenceBlock name="div.sidebar.main" remove="true" />
+        <referenceBlock name="product_list_toolbar" display="false" />
         <referenceBlock name="div.sidebar.additional" remove="true" />
 
     </body>
