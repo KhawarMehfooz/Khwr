@@ -10,15 +10,16 @@ $logoHeight = $logoSizeResolver !== null && $logoSizeResolver->getHeight()
     : $block->getLogoHeight();
 ?>
 
-<a
-    class="logo"
-    href="<?= $block->escapeUrl($block->getUrl('')) ?>"
-    title="<?= $block->escapeHtmlAttr($storeName) ?>"
-    aria-label="store logo">
-    <img src="<?= $block->escapeUrl($block->getLogoSrc()) ?>"
-         title="<?= $block->escapeHtmlAttr($block->getLogoAlt()) ?>"
-         alt="<?= $block->escapeHtmlAttr($block->getLogoAlt()) ?>"
-         <?= $logoWidth ? 'width="' . $block->escapeHtmlAttr($logoWidth) . '"' : '' ?>
-         <?= $logoHeight ? 'height="' . $block->escapeHtmlAttr($logoHeight) . '"' : '' ?>
-    />
-</a>
+<div class="nav-section-logo">
+    <a class="tehzeeb_logo" href="<?= $block->escapeUrl($block->getUrl('')) ?>"
+        title="<?= $block->escapeHtmlAttr($storeName) ?>" aria-label="store logo">
+        <picture>
+            <source media="(min-width: 1025px)" srcset="<?= $block->escapeUrl($block->getLogoSrc()) ?>" />
+            <source media="(max-width: 1024px)" srcset="<?= $block->escapeUrl($block->getViewFileUrl('images/Tehzeeb-logo-English(layered)1.png')) ?>" />
+
+            <img src="<?= $block->escapeUrl($block->getLogoSrc()) ?>"
+                title="<?= $block->escapeHtmlAttr($block->getLogoAlt()) ?>"
+                alt="<?= $block->escapeHtmlAttr($block->getLogoAlt()) ?>"  />
+        </picture>
+    </a>
+</div>
