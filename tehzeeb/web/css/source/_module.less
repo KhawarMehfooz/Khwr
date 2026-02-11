@@ -58,5 +58,20 @@
         }
     }
 
+    .page_bdcrum {
+        .items {
+            .item {
+                &::after {
+                    content: url('@{baseDir}images/right_arrow.png');
+                    display: block;
+                    margin: 0 15px;
+                }
+
+                &:last-child::after {
+                    display: none;
+                }
+            }
+        }
+    }
 
 }

@@ -1,0 +1,36 @@
+.main_container ul.items {
+    padding-block: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    flex-wrap: nowrap;
+}
+
+.page_bdcrum {
+    background-color: #F7F1E5;
+    padding-block: 3px;
+}
+
+.breadcrumbs .item:not(:last-child) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    text-decoration: none;
+}
+
+.breadcrumbs .items>li {
+    display: inline-block;
+    vertical-align: top;
+    text-transform: capitalize;
+    color: #ac8342;
+}
+
+.breadcrumbs .items>li a,
+.breadcrumbs .items>li strong {
+    text-transform: capitalize;
+    color: #ac8342;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
