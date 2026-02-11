@@ -84,20 +84,20 @@
     float: none;
 }
 
-.product_description{
+.product_description {
     margin: 0px;
-    border-top: 1px solid #f3dfbe ;
+    border-top: 1px solid #f3dfbe;
     margin-bottom: 10px;
     padding-top: 10px;
     box-sizing: border-box;
 }
 
-.product-info-price{
+.product-info-price {
     border-bottom: 1px solid #f3dfbe !important;
     margin-bottom: 0px !important;
 }
 
-.product-info-price .price{
+.product-info-price .price {
     color: #1e1e1e !important;
     font-size: 20px !important;
     line-height: 30px !important;
@@ -121,7 +121,32 @@
     padding: 8px 10px !important;
 }
 
-.product-add-form .primary_cta span{
+.product-add-form .primary_cta span {
     font-size: 16px !important;
     letter-spacing: 1px;
+}
+
+#reviews{
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#reviews .product-section-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    color: #2c2c2c;
+    text-align: left;
+    letter-spacing: 2px;
+    padding: 0 0 10px 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #f3dfbe;
+}
+
+.product.media .fotorama__stage{
+    height: 400px !important;
 }
