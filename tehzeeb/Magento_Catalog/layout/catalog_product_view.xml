@@ -1,11 +1,27 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-  <head>
-    <css src="css/pages/product.css" />
-  </head>
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="css/pages/product.css" />
+    </head>
+    <body>
+        <referenceContainer name="page.top">
+            <block
+                name="product_categories"
+                before="breadcrumbs"
+                template="Magento_Catalog::html/product_categories.phtml"
+            />
 
-  <body>
 
-  </body>
+        </referenceContainer>
+
+        <move element="product.info.overview"
+            destination="product.info.main"
+            before="product.info.price" />
+
+        <referenceBlock name="product.info.stock.sku" remove="true" />
+        <referenceBlock name="view.addto.compare" remove="true" />
+        <referenceBlock name="view.addto.wishlist" remove="true" />
+
+    </body>
 </page>
