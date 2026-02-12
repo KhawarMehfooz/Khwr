@@ -272,4 +272,18 @@ aside.right_dialog {
 
 #review-form{
     max-width: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+#customer-reviews{
+    order: 3 !important;
+}
+
+#review-form .review-fieldset{
+    order: 1 !important;
+}
+
+#review-form .review-form-actions{
+    order: 2 !important;
 }

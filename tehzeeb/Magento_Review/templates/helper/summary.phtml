@@ -38,9 +38,9 @@ $urlForm = $block->getReviewsUrl() . '#review-form';
                     $escaper->escapeHtml(__('Reviews')) ?>
                 </span>
             </a>
-            <a class="action add" href="<?= $escaper->escapeUrl($urlForm) ?>">
+            <span class="action add" data-pushbar-target="reviews_dialog"  >
                 <?= $escaper->escapeHtml(__('Add Your Review')) ?>
-            </a>
+            </span>
         </div>
     </div>
 <?php elseif ($block->isReviewEnabled() && $block->getDisplayIfEmpty()): ?>

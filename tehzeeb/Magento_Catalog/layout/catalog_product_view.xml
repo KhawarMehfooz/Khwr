@@ -22,6 +22,8 @@
         <referenceBlock name="product.info.stock.sku" remove="true" />
         <referenceBlock name="view.addto.compare" remove="true" />
         <referenceBlock name="view.addto.wishlist" remove="true" />
+        <!-- <referenceBlock name="product.review.form" remove="true"/> -->
+         <move element="product.info.product_additional_data.wrapper" destination="product.review.form.fields.before"   />
 
     </body>
 </page>
