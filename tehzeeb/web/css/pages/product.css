@@ -126,7 +126,7 @@
     letter-spacing: 1px;
 }
 
-#reviews{
+#reviews {
     max-width: 1600px;
     margin: auto;
     padding: 0 30px;
@@ -147,6 +147,129 @@
     border-bottom: 1px solid #f3dfbe;
 }
 
-.product.media .fotorama__stage{
+.product.media .fotorama__stage {
     height: 400px !important;
+}
+
+.review-add .review-legend {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.review-add fieldset label {
+    font-size: 18px;
+    line-height: 28px;
+    color: #313131;
+    font-weight: 400 !important;
+    padding-bottom: 8px;
+    margin-bottom: 0 !important;
+}
+
+.review-add fieldset input,
+.review-add fieldset textarea {
+    padding: 0 20px;
+    border: 1px solid #d1d1d1 !important;
+    background-color: rgba(246, 246, 246, .5);
+    min-height: 58px;
+    box-sizing: border-box;
+    outline: unset;
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+    color: #8c8c8c;
+}
+
+.review-add fieldset textarea {
+    padding: 10px 20px;
+    border: 1px solid #d1d1d1 !important;
+    background-color: rgba(246, 246, 246, .5);
+    min-height: 78px;
+    box-sizing: border-box;
+    outline: unset;
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+    color: #8c8c8c;
+}
+
+.review-add .fieldset.additional_info {
+    margin: 0px;
+}
+
+.review-add .actions-primary button {
+    font-size: 18px !important;
+    line-height: 26px !important;
+    font-weight: 400 !important;
+    border: 1px solid #be1238 !important;
+    padding: 10px 15px !important;
+    box-sizing: border-box;
+    color: #be1238 !important;
+    background-color: transparent !important;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 10em;
+    text-align: center;
+    transition: .3s ease-in;
+}
+
+.review-add .actions-primary button:hover {
+    background: #be1238 !important;
+    color: #f0f0f0 !important;
+
+}
+
+.product-reviews-summary .reviews-actions .action.add {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #3c3c3c;
+    white-space: nowrap;
+}
+
+aside.right_dialog {
+    z-index: 1000;
+    position: fixed;
+    overflow-y: auto;
+    will-change: transform;
+    transition: transform .5s ease;
+    background: #fff;
+    height: 100%;
+}
+
+.dilog_product_blog.bg_white {
+    background-color: #fff;
+}
+
+.dilog_product_blog .close_dilog {
+    text-align: end;
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 99;
+    padding: 24px 20px 20px;
+    cursor: pointer;
+}
+
+.dilog_product_blog .close_dilog .primary_text {
+    color: #696969;
+}
+
+.dilog_product_blog .dialog_inner {
+    padding: 0 5% 50px;
+}
+
+.fields_2_columns {
+    display: flex;
+    gap: 20px;
+}
+
+.fields_2_columns > div{
+    flex: 1;
+}
+
+#review-form{
+    max-width: 100% !important;
 }
