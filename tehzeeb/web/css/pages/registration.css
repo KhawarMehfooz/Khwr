@@ -1,0 +1,32 @@
+.form-login .actions-toolbar .primary button{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    border: 1px solid #be1238;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background: #be1238;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 10em;
+    text-align: center;
+    transition: .3s ease-in
+}
+
+.block-new-customer .actions-toolbar .primary a.action {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: #3f4b5d;
+    font-size: 20px;
+    line-height: 30px;
+    gap: 15px;
+    font-weight: 500;
+}
+
+.nav-section-logo{
+    margin-right: auto;
+}

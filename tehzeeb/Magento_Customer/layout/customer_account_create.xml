@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="css/pages/registration.css" />
+    </head>
+    <body>
+                <referenceContainer name="header.panel" remove="true" />
+
+        <referenceContainer name="header-wrapper">
+            <referenceBlock name="nav-section-left" remove="true" />
+            <referenceBlock name="nav-section-right" remove="true" />
+        </referenceContainer>
+
+        <referenceContainer name="footer" remove="true" />
+        <!-- <move element="customer.new" destination="header-wrapper" after="logo" /> -->
+
+    </body>
+</page>
