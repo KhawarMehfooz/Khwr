@@ -1,0 +1,10 @@
+.dilog_product_blog .close_dilog {
+    text-align: end;
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 99;
+    padding: 24px 20px 20px;
+    cursor: pointer;
+}

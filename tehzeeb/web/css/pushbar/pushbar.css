@@ -245,3 +245,217 @@ aside.right_dialog,
         max-width: 100%
     }
 }
+
+.dialog_product_blog .close_dialog {
+    text-align: end;
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 99;
+    padding: 24px 20px 20px;
+    cursor: pointer;
+}
+
+.block.block-minicart {
+    display: block !important;
+    position: static !important;
+}
+
+
+
+.minicart-wrapper .block-minicart {
+    padding: 0 !important;
+}
+
+.minicart-wrapper .dialog_product_blog .dialog_inner {
+    padding: 0 5% 50px;
+}
+
+.minicart-wrapper .dialog_product_blog .dialog_inner .dialog_top_cnt {
+    padding-bottom: 0;
+    position: sticky;
+    top: 14px;
+    z-index: 100;
+    max-width: calc(100% - 80px);
+}
+
+.block-minicart .dialog_top_cnt .primary_title {
+    font-size: 30px;
+    line-height: 42px;
+    color: #2c2c2c;
+    text-align: left;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding-bottom: 50px;
+    text-transform: capitalize;
+}
+
+.dialog_top_cnt {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.dialog_top_cnt .primary_title {
+    padding: 0px !important;
+}
+
+.dialog_top_cnt .subtotal {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    /* margin: 0 !important; */
+}
+
+.block-minicart .amount .price-wrapper:first-child .price {
+    font-size: 17px;
+    color: #c5203c;
+    font-weight: 500;
+}
+
+.minicart-wrapper .block-minicart {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.minicart-items-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    border: none !important;
+}
+
+.block-minicart .product {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0px !important;
+}
+
+.minicart-items .product-item {
+    padding: 0 !important;
+}
+
+.minicart-items .product .product-image-container {
+    width: 100% !important;
+    padding: 0;
+    background-color: #fffbf3;
+    max-height: 153px;
+}
+
+.minicart-items .product-item-details {
+    padding: 20px 0 0 0 !important;
+}
+
+.block-minicart .product .product-item-details {
+    margin-left: 40px;
+    flex: 1;
+}
+
+.minicart-items .product-item-name {
+    font-weight: 600 !important;
+    margin: 0 !important;
+}
+
+.minicart-items .product-item-name a {
+    color: #313131;
+}
+
+.block-minicart .product .product-item-details .price-container .price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #121212;
+}
+
+.block-minicart .product-item-pricing {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.details-qty {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 !important;
+}
+
+.block-minicart .product .product-item-details .details-qty .primary_text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #4c4c4c;
+    padding: 0 !important;
+}
+
+.block-minicart .details-qty .primary_cta {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    border: 1px solid #be1238;
+    padding: 0px !important;
+    box-sizing: border-box;
+    color: #be1238;
+    background-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 10em;
+    text-align: center;
+    transition: .3s ease-in;
+}
+
+.details-qty .quantity .button {
+    background-color: transparent;
+    color: #454545;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 30px;
+    height: auto;
+    text-align: center;
+    transition: background-color .2s;
+    display: inline-block;
+    padding: 0;
+}
+
+.quantity .input-box {
+    text-align: center;
+    border: 0;
+    border-inline: 1px solid #be1238 !important;
+    padding: 0px !important;
+    font-size: 18px;
+    line-height: 26px;
+    outline: none;
+    background: 0 0;
+    width: 85px;
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.block-minicart .actions button {
+    font-size: 16px !important;
+    line-height: 26px !important;
+    font-weight: 400 !important;
+    border: 1px solid #be1238;
+    padding: 10px 15px !important;
+    box-sizing: border-box;
+    color: #fff;
+    background: #be1238;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 10em;
+    text-align: center;
+    transition: .3s ease-in;
+}
+
+.block-minicart .actions button{
+    background: #be1238 !important;
+}
+
+.block-minicart .actions a.viewcart {
+        color: #be1238;
+        font-size: 15px;
+    }
