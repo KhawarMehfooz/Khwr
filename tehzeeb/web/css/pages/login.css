@@ -1,0 +1,66 @@
+.page-title-wrapper{
+    margin-top: 30px;
+    font-size: 34px;
+    line-height: 42px;
+    color: #2c2c2c;
+    font-weight: 400 !important;
+    padding-bottom: 35px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-title-wrapper span{
+    font-weight: 400 !important;
+}
+
+.block-customer-login{
+    margin-inline: auto !important;
+    float: none !important;
+}
+
+.form-login .fieldset .field{
+    margin:  0 0 20px !important;
+}
+
+
+.form-login fieldset .field input.input-text{
+        padding: 0 20px;
+        border: 1px solid #d1d1d1 !important;
+        background-color: rgba(246, 246, 246, .5) !important;
+        min-height: 58px;
+        box-sizing: border-box;
+        outline: unset;
+        width: 100%;
+        font-family: 'poppins', sans-serif;
+        color: #8c8c8c;
+}   
+
+.form-login .actions-toolbar{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.form-login .actions-toolbar .secondary a.action{
+    color: #3f4b5d;
+    margin-bottom: 20px;
+}
+
+.form-login .actions-toolbar .primary button{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    border: 1px solid #be1238;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background: #be1238;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 10em;
+    text-align: center;
+    transition: .3s ease-in
+}

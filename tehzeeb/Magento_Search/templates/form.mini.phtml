@@ -45,10 +45,6 @@ $quickSearchUrl = $escaper->escapeUrl($helper->getSuggestUrl());
                             placeholder="<?= $escaper->escapeHtmlAttr(__('Search Tehzeeb...')) ?>" class="input-text"
                             maxlength="<?= $escaper->escapeHtmlAttr($helper->getMaxQueryLength()) ?>" role="combobox"
                             aria-haspopup="false" aria-autocomplete="both" autocomplete="off" aria-expanded="false" />
-                        <span>
-                            <img src="<?= $block->getViewFileUrl('images/searchicon.png') ?>" alt="search"
-                                class="search_icon" id="search-icon" width="22" height="22" style="height: auto;">
-                        </span>
 
                     </div>
                     <div id="search_autocomplete" class="search-autocomplete"></div>
