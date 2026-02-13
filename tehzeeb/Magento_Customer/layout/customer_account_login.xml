@@ -11,6 +11,14 @@
         <css src="css/pages/login.css" />
     </head>
     <body>
-        <referenceBlock name="customer.new" remove="true" />
+        <referenceContainer name="header.panel" remove="true" />
+
+        <referenceContainer name="header-wrapper">
+            <referenceBlock name="nav-section-left" remove="true" />
+            <referenceBlock name="nav-section-right" remove="true" />
+        </referenceContainer>
+
+        <referenceContainer name="footer" remove="true" />
+        <move element="customer.new" destination="header-wrapper" after="logo" />
     </body>
 </page>
